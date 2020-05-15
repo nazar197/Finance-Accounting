@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=420">
+    <title>Облік фінансів</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <head>
+        <h1>Облік фінансів</h1>
+        <h2>Калькулятор надходжень і витрат</h2>
+    </head>
+
+    <main>
+        <div class="container">
+            <section class="total">
+                <header class="total__header">
+                    <h3>Баланс:</h3>
+                <p class="total__balance">0 ₴</p>
+                </header>
+                <div class="total__main">
+                    <div class="total__main-item total__income">
+                        <h4>Доходи</h4>
+                        <p class="total__money total__money-income">
+                            +0 ₴
+                        </p>
+                    </div>
+                    <div class="total__main-item total__expenses">
+                        <h4>Витрати</h4>
+                        <p class="total__money total__money-expenses">
+                            -0 ₴
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="operation">
+                <h3>Нова операція</h3>
+                <form id="form">
+                    <label>
+                        <input type="text" class="operation__fields operation__name" placeholder="Назва операції">
+                    </label>
+                    <label>
+                        <input type="number" class="operation__fields operation__amount" placeholder="Введіть суму">
+                    </label>
+                    <button type="submit" class="operation__add">Додати операцію</button>
+
+                </form>
+            </section>
+            
+            <section class="history">
+                <h3>Історія операцій</h3>
+                <ul class="history__list">
+                    <li class="history__item history__item-plus">Отримав зарплату
+                        <span class="history__money">30000 ₴</span>
+                        <button class="history_delete">✖</button>
+                    </li>
+
+                    <li class="history__item history__item-minus">Віддав борг
+                        <span class="history__money">-10000 ₴</span>
+                        <button class="history_delete">✖</button>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
